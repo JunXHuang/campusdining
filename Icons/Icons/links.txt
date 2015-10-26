@@ -1,3 +1,0 @@
-http://fortawesome.github.io/Font-Awesome/icon/info-circle/
-http://fortawesome.github.io/Font-Awesome/icon/clock-o/
-http://fortawesome.github.io/Font-Awesome/icon/home/
