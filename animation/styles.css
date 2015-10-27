@@ -1,0 +1,57 @@
+/*You can change the background color or do shit her.e*/
+
+body,
+html {
+    font-size: 18px;
+}
+
+
+/*
+    control how big you want the slider...
+    left 40% means it's 40% of the width to right.
+    you can control how it looks here
+*/
+
+.slider {
+    top: 10%;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+
+
+/*set the image here... you can change he width and height
+    100% means it fills .slider , as big as .slider is
+*/
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+    changing the color or size of the dots
+*/
+
+.slick-dots li button:before {
+    color: deepskyblue;
+    font-size: 16px;
+}
+
+
+/* change the color of the selected dots when people click on it*/
+
+.slick-dots li.slick-active button:before {
+    color: black;
+}
+
+
+/*
+    color / width/height of the left and right arrow
+*/
+
+.slick-prev:before,
+.slick-next:before {
+    color: deepskyblue;
+}
