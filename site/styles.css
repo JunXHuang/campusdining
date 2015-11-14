@@ -29,6 +29,45 @@ html {
     height: 300px;
 }
 
+@media(max-width: 580px) {
+    .slider {
+        top: 10%;
+        margin: auto;
+        width: 400px;
+        height: 300px;
+    }
+    .slider img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 480px) {
+    .slider {
+        top: 10%;
+        margin: auto;
+        width: 300px;
+        height: 250px;
+    }
+    .slider img {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 380px) {
+    .slider {
+        top: 10%;
+        margin: auto;
+        width: 250px;
+        height: 200px;
+    }
+    .slider img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
 
 /*
     changing the color or size of the dots
