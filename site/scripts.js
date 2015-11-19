@@ -17,11 +17,11 @@ $(document).ready(function () {
 
 });
 
-function loadTotables(fileName) {
+function loadTotables(fileName, divName) {
     d3.text(fileName, function (data) {
         var parsedCSV = d3.csv.parseRows(data);
 
-        var container = d3.select(".tablehere")
+        var container = d3.select(divName)
             .append("table")
 
         .selectAll("tr")
