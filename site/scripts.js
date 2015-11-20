@@ -45,3 +45,30 @@ $(window).resize(function () {
         $('.col-md-4').addClass('col-xs-6');
     }
 }).resize();
+
+function postContactToGoogle() {
+    var firstname = $('#firstname').val();
+    var lastname = $('#lastname').val();
+    var email = $('#email').val();
+    var details = $('#details').val();
+    if (firstname !== "" && lastname !== "" && details !== "" && email !== "") {
+        $.ajax({
+            url: "https://docs.google.com/forms/d/1Ymda9DLq3N1CFFNnY2p35ENn4Rb9OYFXOs4Xf3-wWMI/formResponse",
+            data: {
+                "entry.998648841": firstname,
+                "entry.519187987": lastname,
+                "entry.667031926": email,
+                "entry.761418809": details,
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    200: function () {
+                        alert("Your response has been recorded!")
+                    }
+                }
+            }
+        });
+    } else {
+        alert("Your reponse was not sent!\nAll text boxes must be filled!");
+    }
+}
