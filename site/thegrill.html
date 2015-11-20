@@ -2,10 +2,11 @@
 <html>
 
 <head>
+    <title>Campus Dining</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Campus Dining</title>
 
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -14,18 +15,21 @@
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <script type="text/javascript" src="d3.v3.min.js"></script>
     <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
+    <script>
+        loadTotables("./menu/sac/thegrill.csv", ".thegrill")
+    </script>
+
 </head>
 
 <body>
     <div class="logo">
         <center><img src=campusdininglogo.PNG></center>
     </div>
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,14 +44,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="home.html"><img src=icons/home.png>Home<span class="sr-only">(current)</span></a>
+                    <li>
+                        <a href="home.html"><img src=icons/home.png>Home</a>
                     </li>
                     <li>
                         <a href="urbanpizza.html"><img src=icons/sac.png>Urban Pizza</a>
                     </li>
-                    <li>
-                        <a href="thegrill.html"><img src=icons/jasmine.png>The Grill</a>
+                    <li class="active">
+                        <a href="thegrill.html"><img src=icons/jasmine.png>The Grill<span class="sr-only">(current)</span></a>
                     </li>
                     <li>
                         <a href="oodles.html"><img src=icons/union.png>Oodles</a>
@@ -73,88 +77,33 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <center class="put-some-break-top">
-        <h1>Sample food across all dining area in SBU</h1></center>
-    <!-- Slider-->
-    <div class="slick-slider slider one-time">
-        <div>
-            <div class="image"><img src="sbu_food/10547678_10153094145089876_5157109152596846869_n.jpg"> </div>
-        </div>
-        <div>
-            <div class="image"> <img src="sbu_food/10561667_10152770702814876_3944566630395012329_n.jpg"> </div>
-        </div>
-        <div>
-            <div class="image"> <img src="sbu_food/10624806_10152807172294876_6793088813463896169_n.jpg"></div>
-        </div>
-        <div>
-            <div class="image"> <img src="sbu_food/10628206_10152641996044876_1173678231254427937_n.jpg"></div>
-        </div>
-        <div>
-            <div class="image"> <img src="sbu_food/11044598_10153104263109876_6514310366615050694_n.jpg"></div>
-        </div>
-        <div>
-            <div class="image"> <img src="sbu_food/10997695_10153095993824876_7698960272528002435_n.jpg"> </div>
-        </div>
-        <div>
-            <div class="image"> <img src="sbu_food/11028010_10153400256379876_1711921182975649813_n.jpg"></div>
-        </div>
-    </div>
-
-    <h2><center class="put-some-break-top">Check out the menu by clicking on the images below</center></h2>
-
-    <div class="container put-some-break">
+    <div class="container put-some-break more-lines">
         <div class="row">
             <div class="col-xs-6 col-md-4">
                 <div class="card">
-                    <center><a href="#">Urban Pizza</a></center>
                     <center>
-                        <a href="#"><img src="sbu_food/11038153_10153152609784876_6832121361550315602_o.jpg"></a>
+                        <img src="sbu_food/11028010_10153400256379876_1711921182975649813_n.jpg">
                     </center>
                 </div>
             </div>
             <div class="col-xs-6 col-md-4">
                 <div class="card">
-                    <center><a href="#">The Grill</a></center>
                     <center>
-                        <a href="#"><img src="sbu_food/jasmine/10151365_1028338370523325_3872887537598001938_n.jpg"></a>
-                    </center>
-                </div>
-            </div>
-
-            <div class="col-xs-6 col-md-4">
-                <div class="card">
-                    <center><a href="#">Oodles</a></center>
-                    <center>
-                        <a href="#"><img src="sbu_food/11028010_10153400256379876_1711921182975649813_n.jpg"></a>
+                        <img src="sbu_food/jasmine/12072817_1022318621125300_1967289601093125220_n.jpg">
                     </center>
                 </div>
             </div>
             <div class="col-xs-6 col-md-4">
                 <div class="card">
-                    <center><a href="#">Omelets</a></center>
                     <center>
-                        <a href="#"><img src="sbu_food/1489091_10152235038559876_267845343_n.jpg"></a>
+                        <img src="sbu_food/jasmine/12079629_1025223044168191_9115704819267289445_n.jpg">
                     </center>
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4">
-                <div class="card">
-                    <center><a href="#">Cyclone</a></center>
-                    <center>
-                        <a href="#"><img src="sbu_food/971436_10152042654794876_688798146_n.jpg"></a>
-                    </center>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                <div class="card">
-                    <center><a href="#">Bombay Taco</a></center>
-                    <center>
-                        <a href="#"><img src="sbu_food/10632620_10152657428844876_8195999881204288277_n.jpg"></a>
-                    </center>
-                </div>
-            </div>
-
         </div>
+    </div>
+    <div class="container bombay">
+        <div class="thegrill bombaytaco"></div>
     </div>
 </body>
 
