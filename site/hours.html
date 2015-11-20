@@ -1,1 +1,194 @@
-a
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Campus Dining</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+    <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="logo">
+        <center><img src=campusdininglogo.PNG></center>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="home.html"><img src=icons/home.png>Home</a>
+                    </li>
+                    <li>
+                        <a href="urbanpizza.html"><img src=icons/sac.png>Urban Pizza</a>
+                    </li>
+                    <li>
+                        <a href="thegrill.html"><img src=icons/jasmine.png>The Grill</a>
+                    </li>
+                    <li>
+                        <a href="oodles.html"><img src=icons/union.png>Oodles</a>
+                    </li>
+                    <li class="active">
+                        <a href="omelets.html"><img src=icons/westside.png>Omelets<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a href="cyclone.html"><img src=icons/roth.png>Cyclone</a>
+                    </li>
+                    <li>
+                        <a href="bombaytaco.html"><img src=icons/tablercafe.png>Bombay Taco</a>
+                    </li>
+                    <li>
+                        <a href="hours.html"><img src=icons/hours.png>Hours</a>
+                    </li>
+                    <li>
+                        <a href="contactme.html"><img src=icons/about.png>Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container dininghours">
+        <table class="hourstable">
+            <thead>
+                <tr>
+                    <th><span class="redlarge">Student Activities Center<br></span></th>
+                    <th>Monday - Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Breakfast</strong></td>
+                    <td>7:30am - 10:30am</td>
+                    <td>7:30am - 10:30am</td>
+                    <td>12:00pm - 2:00pm</td>
+                    <td>12:00pm - 2:00pm</td>
+                </tr>
+                <tr>
+                    <td><strong>Omelets<br></strong></td>
+                    <td>11:00am - 3:00pm</td>
+                    <td>11:00am - 3:00pm</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>Bagel Bar</strong></td>
+                    <td>7:30am - 10:00am</td>
+                    <td>7:30am - 10:00am</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>The Grill (Breakfast)</strong></td>
+                    <td>7:30am - 10:45am</td>
+                    <td>7:30am - 10:45am</td>
+                    <td>9:00am - 10:45am</td>
+                    <td>9:00am - 10:45am</td>
+                </tr>
+                <tr>
+                    <td><strong>The Grill (Lunch &amp; Dinner)</strong></td>
+                    <td>11:00am - 10:00pm</td>
+                    <td>11:00am - 8:00pm</td>
+                    <td>11:00am - 6:00pm</td>
+                    <td>11:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td><strong>Urban Pizza</strong></td>
+                    <td>11:00am - 8:00pm</td>
+                    <td>11:00am - 8:00pm</td>
+                    <td>12:00pm - 6:00pm</td>
+                    <td>12:00pm - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td><strong>Bombay Taco</strong></td>
+                    <td>11:00am - 10:00pm</td>
+                    <td>11:00am - 8:00pm</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>Oodles</strong></td>
+                    <td>10:30am - 10:00pm</td>
+                    <td>10:30am - 8:00pm</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>Cyclone Salads &amp; Wraps</strong></td>
+                    <td>10:30am - 10:00pm</td>
+                    <td>10:30am - 8:00pm</td>
+                    <td>12:00pm - 6:00pm</td>
+                    <td>12:00pm - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td><strong>Hot Food Bar (Breakfast)</strong></td>
+                    <td>9:00am - 10:30am</td>
+                    <td>9:00am - 10:30am</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>Hot Food Bar (Part of Urban Pizza)</strong></td>
+                    <td>10:45am - 9:00pm</td>
+                    <td>10:45am - 8:00pm</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>Oatmeal</strong></td>
+                    <td>7:30am - 10:45am</td>
+                    <td>7:30am - 10:45am</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td><strong>Soup</strong></td>
+                    <td>11:00am - 9:00pm</td>
+                    <td>11:00am - 8:00pm</td>
+                    <td>12:00pm - 6:00pm</td>
+                    <td>12:00pm - 6:00pm</td>
+                </tr>
+                <tr>
+                    <td><strong>Yogurt</strong></td>
+                    <td>7:30am - 9:00pm</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
