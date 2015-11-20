@@ -204,15 +204,11 @@
         margin-bottom: 30px;
     }
     
-    .bombay {
-        margin-top: 100px;
-    }
-    
     .bombaytaco {
         position: relative;
         display: inline-block;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
     }
     
     .bombaytaco table {
@@ -236,22 +232,6 @@
         .bombaytaco table {
             width: 300px;
         }
-    }
-    
-    .cyclonesaladswraps {
-        margin-top: 300px;
-    }
-    
-    .oodles {
-        margin-top: 50px;
-    }
-    
-    .thegrill {
-        margin-top: 250px;
-    }
-    
-    .urbanpizza {
-        margin-top: 80px;
     }
     
     .dininghours {
@@ -355,5 +335,9 @@ and also iPads specifically.
     }
     
     .marbot {
+        margin-bottom: 50px;
+    }
+    
+    .bombay {
         margin-bottom: 50px;
     }
